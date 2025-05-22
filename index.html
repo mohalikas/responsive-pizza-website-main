@@ -1,77 +1,210 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <title>Responsive pizza website - Bedimcode</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo"><i class="ri-pizza-line"></i> Pizza</a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+               <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+               <li class="nav__item"><a href="#popular" class="nav__link">Popular</a></li>
+               <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
+               <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+         </div>
+         <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+      </nav>
+   </header>
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__data">
+               <h1 class="home__title">Crispy And<br>Delicious Pizzas</h1>
+               <p class="home__description">
+                  Order the best pizzas to end your hunger and make your moments more memorable, place your order now!
+               </p>
+               <a href="#products" class="button home__button">Order Pizza Now</a>
+            </div>
+            <img src="assets/img/home-pizza.png" alt="Pizza" class="home__img">
+         </div>
+      </section>
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <img src="assets/img/about-img.png" alt="About Pizza" class="about__img">
+            <div class="about__data">
+               <h2 class="section__title">Learn More About<br>Our History</h2>
+               <p class="about__description">
+                  Since 1998, our pizzeria has been serving up the freshest, most delicious pizzas in town. Our secret? Only the best ingredients, a passion for flavor, and a love for sharing good food with great people. Whether you crave a classic Margherita or a loaded Pepperoni, we have something for everyone!
+               </p>
+               <br>
+               <br>
+               <a href="#popular" class="button">The Best Pizzas</a>
+            </div>
+         </div>
+      </section>
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+         <h2 class="section__title">The Most<br>Devoured Pizzas</h2>
+         <div class="popular__container container grid">
+            <article class="popular__card">
+               <img src="assets/img/popular-1.png" alt="Vegetarian Pizza" class="popular__img">
+               <h3 class="popular__name">Vegetarian Pizza</h3>
+               <span class="popular__price">1500 da</span>
+               <button class="popular__button"><i class="ri-add-line"></i></button>
+            </article>
+            <article class="popular__card">
+               <img src="assets/img/popular-2.png" alt="Pepperoni Pizza" class="popular__img">
+               <h3 class="popular__name">Pepperoni Pizza</h3>
+               <span class="popular__price">1000 da</span>
+               <button class="popular__button"><i class="ri-add-line"></i></button>
+            </article>
+            <article class="popular__card">
+               <img src="assets/img/popular-3.png" alt="Margherita Pizza" class="popular__img">
+               <h3 class="popular__name">Margherita Pizza</h3>
+               <span class="popular__price">1200 da</span>
+               <button class="popular__button"><i class="ri-add-line"></i></button>
+            </article>
+            <article class="popular__card">
+               <img src="https://th.bing.com/th/id/OIP.EEMEGVoY09BkHPhjSvPZ6AHaHn?cb=iwp2&rs=1&pid=ImgDetMain" alt="BBQ Chicken Pizza" class="popular__img">
+               <h3 class="popular__name">BBQ Chicken Pizza</h3>
+               <span class="popular__price">1400 da</span>
+               <button class="popular__button"><i class="ri-add-line"></i></button>
+            </article>
+            <article class="popular__card">
+               <img src="https://static.vecteezy.com/system/resources/previews/051/449/868/non_2x/hawaiian-pizza-with-pineapple-and-ham-isolated-on-transparent-background-free-png.png" alt="Hawaiian Pizza" class="popular__img">
+               <h3 class="popular__name">Hawaiian Pizza</h3>
+               <span class="popular__price">1300 da</span>
+               <button class="popular__button"><i class="ri-add-line"></i></button>
+            </article>
+            <article class="popular__card">
+               <img src="https://media.istockphoto.com/id/479293070/photo/pizza.jpg?s=612x612&w=0&k=20&c=6_FFHbieV8R1VPc7fehj5K6s3vlPt15xk6MeN6rSN_E=" alt="Meat Lovers Pizza" class="popular__img">
+               <h3 class="popular__name">Meat Lovers Pizza</h3>
+               <span class="popular__price">1600 da</span>
+               <button class="popular__button"><i class="ri-add-line"></i></button>
+            </article>
+         </div>
+      </section>
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+      <!--==================== RECIPE ====================-->
+      <section class="recipe section" id="recipe">
+         <div class="recipe__container container grid">
+            <div class="recipe__data">
+               <h2 class="section__title">Fresh And<br>Natural Ingredients</h2>
+               <ul class="recipe__list">
+                  <li><i class="ri-checkbox-circle-line"></i> Flour: Natural flour for the best crust</li>
+                  <li><i class="ri-checkbox-circle-line"></i> Cheese: Creamy cheese for a dazzling taste</li>
+                  <li><i class="ri-checkbox-circle-line"></i> Sauce: Homemade tomato sauce</li>
+                  <li><i class="ri-checkbox-circle-line"></i> Vegetables: Fresh and healthy veggies</li>
+                  <li><i class="ri-checkbox-circle-line"></i> Meats: Highest meat quality for your pizza</li>
+               </ul>
+            </div>
+            <img src="assets/img/recipe-img.png" alt="Recipe Pizza" class="recipe__img">
+         </div>
+      </section>
 
-      <title>Responsive pizza website - Bedimcode</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         
-      </header>
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section" id="products">
+         <h2 class="section__title">Discover<br>Popular Orders</h2>
+         <div class="products__container container grid">
+            <article class="products__card">
+               <img src="assets/img/product-1.png" alt="Pepperoni Pizza" class="products__img">
+               <h3 class="products__name">Pepperoni Pizza</h3>
+               <span class="products__price">1000 da</span>
+               <button class="products__button"><i class="ri-add-line"></i></button>
+            </article>
+            <article class="products__card">
+               <img src="assets/img/product-2.png" alt="Margherita Pizza" class="products__img">
+               <h3 class="products__name">Margherita Pizza</h3>
+               <span class="products__price">1200 da</span>
+               <button class="products__button"><i class="ri-add-line"></i></button>
+            </article>
+            <article class="products__card">
+               <img src="assets/img/product-3.png" alt="Vegetarian Pizza" class="products__img">
+               <h3 class="products__name">Vegetarian Pizza</h3>
+               <span class="products__price">1500 da</span>
+               <button class="products__button"><i class="ri-add-line"></i></button>
+            </article>
+            <article class="products__card">
+               <img src="assets/img/product-4.png" alt="BBQ Chicken Pizza" class="products__img">
+               <h3 class="products__name">BBQ Chicken Pizza</h3>
+               <span class="products__price">1400 da</span>
+               <button class="products__button"><i class="ri-add-line"></i></button>
+            </article>
+            <article class="products__card">
+               <img src="assets/img/product-5.png" alt="Hawaiian Pizza" class="products__img">
+               <h3 class="products__name">Hawaiian Pizza</h3>
+               <span class="products__price">1300 da</span>
+               <button class="products__button"><i class="ri-add-line"></i></button>
+            </article>
+         </div>
+      </section>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            
-         </section>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <div class="contact__container container grid">
+            <div class="contact__content">
+               <h2 class="section__title">Contact Now</h2>
+               <ul class="contact__list">
+                  <li><i class="ri-mail-line"></i> Write Us: pizza@email.com</li>
+                  <li><i class="ri-map-pin-line"></i> Location: 123 bab Ezzouar, Alger</li>
+                  <li><i class="ri-motorbike-line"></i> Delivery: 24/7 Fast Delivery</li>
+               </ul>
+            </div>
+            <img src="assets/img/contact-img.png" alt="Delivery" class="contact__img">
+         </div>
+      </section>
+   </main>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            
-         </section>
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div class="footer__content">
+            <a href="#" class="footer__logo"><i class="ri-pizza-line"></i> Pizza</a>
+            <p class="footer__description">
+               The best pizza delivered to your door.<br>
+               &copy; 2025 Bedimcode. All rights reserved.
+            </p>
+         </div>
+         <div class="footer__links">
+            <a href="#about" class="footer__link">About</a>
+            <a href="#popular" class="footer__link">Popular</a>
+            <a href="#products" class="footer__link">Products</a>
+            <a href="#contact" class="footer__link">Contact</a>
+         </div>
+         <div class="footer__social">
+            <a href="#" class="footer__social-link"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+            <a href="#" class="footer__social-link"><i class="ri-twitter-x-line"></i></a>
+         </div>
+      </div>
+   </footer>
 
-         <!--==================== POPULAR ====================-->
-         <section class="popular section" id="popular">
-            
-         </section>
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
 
-         <!--==================== RECIPE ====================-->
-         <section class="recipe section">
-            
-         </section>
-
-         <!--==================== PRODUCTS ====================-->
-         <section class="products section" id="products">
-            
-         </section>
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            
-         </section>
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         
-      </footer>
-
-      <!--========== SCROLL UP ==========-->
-
-
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
-      
-      <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
-
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <!--=============== SWIPER JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
 </html>
